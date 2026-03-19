@@ -1,50 +1,56 @@
-# KPI Tracking Pipeline
+# KPI Tracking Dashboard (Executive Reporting)
 
 ## Overview
 
-Built a SQL-based KPI pipeline to track core business metrics across product usage, customer engagement, and service performance. The pipeline consolidates multiple data sources into a unified table used for executive dashboard reporting.
+Built a SQL-based KPI pipeline and dashboard used for monthly and weekly executive reporting. This replaced static Excel reports and is used during leadership meetings to review performance and drill into specific metrics.
 
-## Problem
+## Context
 
-Key metrics (sales, device connectivity, registration, app performance, and service quality) were stored across separate systems with inconsistent definitions. This made it difficult to monitor performance and identify trends across the full customer lifecycle.
+Previously, KPI reporting was delivered through manually prepared Excel files. This made it difficult to:
+
+* quickly navigate across metrics during meetings
+* investigate changes in real time
+* maintain consistent metric definitions
+
+## Solution
+
+Developed a centralized KPI dashboard backed by SQL pipelines that standardize and aggregate key business metrics.
+
+The dashboard is used live during executive meetings, allowing leadership to move between views and explore metrics in detail when questions arise.
+
+## Metrics Covered
+
+The KPI system includes:
+
+* **Sales** (volume)
+* **Connected Devices** (volume, connection rate)
+* **Registered Devices** (volume, registration rate)
+* **Push Notifications** (read rate)
+* **App Ratings** (AOS, iOS)
+* **Customer Care QOS** (email, push)
+* **Agent Performance QOS**
+
+Metrics are tracked across:
+
+* product groups (Total, TV, H&A)
+* monthly and weekly timeframes
 
 ## Approach
 
-* Aggregated and standardized metrics across multiple domains:
+* Built SQL pipelines to aggregate and standardize metrics across multiple data sources
+* Created consistent definitions for volume and rate-based KPIs
+* Used window functions (`SUM OVER`, `LAG`) to compute:
 
-  * **Sales** (volume)
-  * **Connected Devices** (volume, connection rate)
-  * **Registered Devices** (volume, registration rate)
-  * **Push Notifications** (read rate)
-  * **App Ratings** (AOS, iOS)
-  * **Customer Care QOS** (email, push, agent performance)
+  * cumulative values
+  * week-over-week and month-over-month changes
+* Structured outputs to support flexible dashboard navigation during meetings
 
-* Built time-based metrics at both **monthly and weekly levels**
+## Impact
 
-* Modeled relationships between datasets (e.g., connected → registered rates)
-
-* Applied window functions (`SUM OVER`, `LAG`) to compute:
-
-  * cumulative metrics
-  * period-over-period changes
-
-## Output
-
-Generated a unified KPI table supporting:
-
-* multiple product groups (Total, TV, H&A)
-* multiple metric types (volume, rate)
-* multiple time granularities (monthly, weekly)
-
-This table serves as the backend for executive dashboards and recurring business reviews.
-
-## Key SQL Concepts
-
-* Window functions: `LAG`, `SUM OVER`
-* Time-based aggregation: `DATE_TRUNC`
-* Multi-source joins across product, app, and service datasets
-* Metric standardization across domains
+* Replaced manual Excel-based reporting with a centralized dashboard
+* Enabled real-time discussion and analysis during executive reviews
+* Improved consistency and accessibility of KPI reporting across teams
 
 ## Files
 
-* `kpi_pipeline.sql` — core pipeline logic for KPI table generation
+* `kpi_pipeline.sql` — core SQL logic for KPI aggregation (sales, connected, registered)
