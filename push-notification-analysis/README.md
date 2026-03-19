@@ -1,45 +1,26 @@
-# Push Notification Analysis
+# Push Notification Data Processing (Python)
 
 ## Overview
+This project demonstrates the use of Python (Pandas) to process and transform large-scale raw data that could not be handled in Excel.
 
-Analyzed large-scale push notification data to identify user engagement patterns and optimize notification strategy. Python was used to preprocess raw data that was too large to be handled directly, and Excel was used for exploratory analysis.
+---
 
-## Context
+## What This Script Does
+- Reads and combines multiple large CSV files  
+- Handles encoding inconsistencies (UTF-8, UTF-16)  
+- Cleans and selects relevant fields  
+- Creates new features (e.g., product type, notification logic, engagement status)  
+- Transforms date fields for analysis  
+- Splits the dataset into multiple files based on notification logic  
 
-Push notification logs were stored in large raw files that could not be opened or analyzed directly. This made it difficult to evaluate:
+---
 
-* user engagement trends
-* notification fatigue
-* effectiveness of notification frequency
+## Tools Used
+- Python  
+- Pandas  
 
-## Approach
+---
 
-* Used Python to preprocess and segment raw push notification data into smaller, analyzable datasets
-
-* Structured data by user and notification type to enable downstream analysis
-
-* Exported processed datasets for analysis in Excel
-
-* In Excel:
-
-  * analyzed engagement trends over time
-  * identified drop-off patterns in notification response
-  * compared performance across notification logic types
-
-## Key Insight
-
-Identified a decline in engagement after repeated notifications, indicating notification fatigue and the need to adjust send frequency.
-
-## Impact
-
-* Improved push notification read rates by **76%** through optimized notification strategy
-* Maintained effectiveness of preventive maintenance notifications while reducing overexposure
-
-## Tools
-
-* Python (data preprocessing)
-* Excel (analysis and visualization)
-
-## Files
-
-* `data_preprocessing.py` — Python script used to clean and segment raw notification data
+## Notes
+- Raw data is not included due to size and confidentiality  
+- This project focuses on data preprocessing and transformation  
