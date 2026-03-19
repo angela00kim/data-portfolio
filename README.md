@@ -40,7 +40,6 @@ Builds time-based metrics for product usage, sales, and device connectivity.
 
 ## Tech Stack
 - SQL (BigQuery)
-- Python (Pandas)
 - Data Modeling & Transformation
 - Dashboarding (Tableau / BI tools)
 
