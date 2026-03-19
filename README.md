@@ -1,94 +1,50 @@
-# 📊 Automating KPI Reporting & Dashboard for ThinQ Analytics
+# ThinQ Analytics Projects
 
-## 📌 Overview
-Developed an automated KPI reporting system to replace manual Excel-based workflows and enable scalable, real-time analytics across product, engagement, and customer experience metrics.
+## Overview
+This repository contains a collection of analytics projects built to model user behavior, campaign performance, and product engagement.
 
----
-
-## ❗ Problem
-Before this project:
-- KPI data was manually collected and entered into Excel
-- Team spent ~4+ hours every Monday updating pivot tables
-- Large Excel files caused performance issues and inefficiencies
-- High risk of human error in reporting
+The projects are based on real-world analytics use cases, including user lifecycle tracking, marketing attribution, and KPI reporting.
 
 ---
 
-## 🎯 Solution
-Designed and implemented an automated data pipeline and dashboard system that eliminated manual reporting.
+## Projects
+
+### 1. SMS Campaign Attribution
+Tracks SMS campaign performance by linking messages to user signup and product registration events.  
+Includes conversion rates, registration rates, and lead time analysis.
+
+📁 `/sms-campaign`
 
 ---
 
-## ⚙️ Data Pipeline Architecture
-- Extracted KPI data from internal reports (sales, engagement, product data)
-- Transformed data into structured CSV formats
-- Uploaded data to Google Cloud Storage
-- Processed data using BigQuery queries
-- Built dashboards for business monitoring
+### 2. User Lifecycle Funnel
+Models user progression from app download to account creation, device connection, and product registration.
+
+📁 `/user-funnel`
 
 ---
 
-## 📊 Dashboard Coverage
+### 3. App Review Analytics
+Analyzes app ratings and user feedback trends to identify key drivers of customer satisfaction.
 
-### 1. Business Performance
-- Sales, Connected Devices, Registered Products
-- KPI trend tracking across weekly and monthly levels
-
-📌 Insight:
-- Connection rate stabilized around ~18–19%
+📁 `/app-reviews`
 
 ---
 
-### 2. Engagement Analytics
-- SMS campaigns
-- Push notification read rates
-- Email and survey performance
+### 4. KPI & Engagement Tracking
+Builds time-based metrics for product usage, sales, and device connectivity.
 
-📌 Insight:
-- Push read rates ranged ~10–16% depending on period
+📁 `/kpi-tracking`
 
 ---
 
-### 3. Customer Experience
-- App ratings (AOS / iOS)
-- Review sentiment and issue breakdown
-
-📌 Insight:
-- Most issues relate to connectivity, app crashes, and feature limitations
-
----
-
-### 4. Conversion Funnel (Key Highlight)
-- Account creation via LG.com repair flow
-
-📌 Insight:
-- Conversion rate ~6–9%, indicating onboarding friction
-
----
-
-## 🚀 Impact
-- Reduced reporting time from ~4+ hours → fully automated dashboards
-- Eliminated manual Excel workflows and pivot table maintenance
-- Improved data accuracy and consistency
-- Enabled scalable KPI monitoring across multiple business areas
-
----
-
-## 🛠 Tools & Technologies
+## Tech Stack
 - SQL (BigQuery)
-- Google Cloud Storage
-- Excel (data transformation)
-- BI Dashboard tools
+- Python (Pandas)
+- Data Modeling & Transformation
+- Dashboarding (Tableau / BI tools)
 
 ---
 
-## 📸 Dashboard Preview
-
-![KPI Overview](image1.png)
-![Engagement](image2.png)
-![Conversion Funnel](image3.png)
-
----
-
-## 📎 Files
-- Dashboard PDFs included in this repository
+## Notes
+All projects use simplified or synthetic datasets. The original implementations were built on internal company data.
