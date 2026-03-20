@@ -23,24 +23,21 @@ https://public.tableau.com/shared/BHDR2JKR6?:display_count=n&:origin=viz_share_l
 ## Dashboard Highlights
 
 ### EV Adoption Growth Over Time
-
-![EV Growth](screenshots/ev_growth.png)
+<img src="screenshots/ev_growth.png" width="600"/>
 
 EV registrations have increased significantly over time, with consistent year-over-year growth indicating accelerating adoption of electric vehicles.
 
 ---
 
 ### Geographic Distribution of EVs
-
-![EV Map](screenshots/ev_map.png)
+<img src="screenshots/ev_map.png" width="600"/>
 
 EV adoption is concentrated in a few key counties, with King County leading significantly in total registrations. Regional disparities highlight differences in infrastructure and adoption rates.
 
 ---
 
 ### EV Market Structure
-
-![EV Market](screenshots/ev_market.png)
+<img src="screenshots/ev_market.png" width="600"/>
 
 The EV market is dominated by a small number of manufacturers, with Tesla and Nissan leading in total registrations. A limited number of models account for a large share of total EV adoption.
 
