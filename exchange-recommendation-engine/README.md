@@ -78,10 +78,10 @@ The system supports:
 The recommendation engine is integrated into an internal tool used by call center agents.
 
 ### Washer Example
-![Washer Example](screenshots/washer_recommendation_example.png)
+![Washer Example](agent-view/washer_recommendation_example.png)
 
 ### Dryer Example
-![Dryer Example](screenshots/dryer_recommendation_example.png)
+![Dryer Example](agent-view/dryer_recommendation_example.png)
 
 - Displays top alternative models based on similarity logic  
 - Highlights differences in product type, size, and color  
