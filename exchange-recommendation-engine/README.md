@@ -72,6 +72,25 @@ The system supports:
 - Generated **top 5 ranked alternatives per product**
 
 ---
+## System Flow
+
+The recommendation engine follows a structured pipeline from raw product data to agent-facing output:
+
+```text
+[Product Data]
+      ↓
+[Feature Engineering]
+      ↓
+[Candidate Filtering]
+      ↓
+[Ranking Logic]
+      ↓
+[Top 5 Recommendations]
+      ↓
+[Agent View (UI)]
+```
+
+---
 
 ## Example Output (Agent View)
 
@@ -105,6 +124,6 @@ The recommendation engine is integrated into an internal tool used by call cente
 ---
 
 ## Notes
-- Raw data and internal dashboards are not included due to data privacy policies  
+- Raw data are not included due to data privacy policies  
 - Product identifiers and sensitive fields have been anonymized  
-- Logic and structure are preserved to demonstrate system design and SQL capability  
+- Logic and structure are preserved to demonstrate system design and SQL capability
