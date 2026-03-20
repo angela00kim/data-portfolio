@@ -60,3 +60,8 @@ Produced structured tables used for dashboard reporting, including:
 ## Files
 
 * `sms_pipeline.sql` — SQL pipeline for SMS attribution and KPI calculation
+
+## Notes
+- Raw data are not included due to data privacy policies  
+- Sensitive fields have been anonymized  
+- Logic and structure are preserved to demonstrate system design and SQL capability
