@@ -50,23 +50,27 @@ The goal was to identify an **optimal inventory and purchasing strategy** using 
 
 ### 1. Inventory Fluctuation Indicates Inefficient Replenishment
 
-<img src="images/fuel_trend.png" width="500"/>
+<p align="center">
+  <img src="images/fuel_trend.png" width="600"/>
+</p>
 
 Fuel levels show significant variability, suggesting inconsistent ordering timing and lack of standardized replenishment strategy.
 
 ---
 
 ### 2. Purchasing Behavior is Not Optimized Over Time
-
-<img src="images/purchase_trend.png" width="500"/>
+<p align="center">
+  <img src="images/purchase_trend.png" width="500"/>
+</p>
 
 Monthly purchase patterns reveal irregular ordering behavior, indicating missed opportunities for bulk purchasing optimization.
 
 ---
 
 ### 3. Discount Opportunities Are Underutilized
-
-<img src="images/discount_distribution.png" width="500"/>
+<p align="center">
+  <img src="images/discount_distribution.png" width="500"/>
+</p>
 
 Many purchases fall below optimal discount thresholds, resulting in avoidable cost inefficiencies.
 
