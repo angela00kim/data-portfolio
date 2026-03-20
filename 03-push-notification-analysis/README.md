@@ -6,11 +6,11 @@ Analyzed 2.93M push notifications sent to ThinQ app users over a 2 year time per
 ## Business Problem
 Observed a consistent decrease in read rate for action requiring logics that needed customer or technician insepction. Examples included Dryer duct build-up, Washer water temperature issues, Oven cleaning, Refrigerator filter changes. If unsolved, could hinder product performance and customer satisfaction. Current read rate data does not show repeated notifications or exact number of unique customers that received the notification. Need a plan to increase notification read rate. 
 
-## Approach
-Raw notification data arrived as dozens of fragmented CSV exports with inconsistent encodings, granular diagnosis codes, and no standardized  product or engagement labels. Before any analysis could happen, the data needed to be consolidated, cleaned, and restructured.
+## Challenge
+Raw notification delivery data arrived in multiple big file that could not be opened in excel due to the size. The files had inconsistent encodings, granular diagnosis codes, and no standardized  product or engagement labels.
 
 ## Approach
-* Combines and ingests multiple large CSV files with mixed encodings (UTF-8/UTF-16)
+* Combine and ingests multiple large CSV files with mixed encodings (UTF-8/UTF-16)
 * Standardizes product categories across 7 appliance types
 * Groups 20+ granular diagnosis codes into analyzable notification logic types
 * Derives engagement status (Read vs. Unread) from raw delivery flags
@@ -18,13 +18,8 @@ Raw notification data arrived as dozens of fragmented CSV exports with inconsist
 * Filters a known bad data window (Feb 5–17, 2024)
 * Splits output into separate files per logic type for downstream analysis
 
-## Why Python Instead of Excel
-The dataset contained 2.93M+ rows across multiple files — beyond Excel's 
-row limit and too slow for manual processing. Python (Pandas) enabled 
-automated, repeatable ingestion that fed directly into the analysis layer.
-
 ## Tools
-Python, Pandas
+Python, Excel
 
 ## Note
 * Raw data and final analysis are not included due to company data confidentiality.
