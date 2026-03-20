@@ -1,5 +1,4 @@
 # App Rating & Reviews
-# App Ratings & Reviews (VOC Pipeline)
 
 ## Overview
 
