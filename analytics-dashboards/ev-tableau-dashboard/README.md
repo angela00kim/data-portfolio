@@ -24,3 +24,6 @@ Analyzed electric vehicle (EV) registration data in Washington State (2015–202
 ## Tools
 - Tableau
 - Data aggregation & visualization
+
+## Notes
+This project was completed as part of a graduate-level group project. My contributions focused on data analysis, dashboard design, and insight generation.
