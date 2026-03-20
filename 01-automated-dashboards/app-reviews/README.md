@@ -60,3 +60,9 @@ Produced structured tables used in dashboard visualizations, including:
 ## Files
 
 * `app_reviews_pipeline.sql` — SQL pipeline for app rating and review processing
+
+## Notes
+
+- Raw data are not included due to data privacy policies  
+- Sensitive fields have been anonymized  
+- Logic and structure are preserved to demonstrate system design and SQL capability
