@@ -7,18 +7,19 @@ This system was developed as part of an executive-sponsored initiative and integ
 ## Business Problem
 - High buyback rate (~71%) compared to exchanges (~29%)
 - No standardized method to recommend alternative products
+- Need to incorporate the daily changes in inventory at each designated warehouse
 - Manual and inconsistent decision-making across agents and product groups
 
 ## Challenge: Schema Complexity
-The most complex part of this project was data normalization. Model naming patterns changed every year and varied by product group (e.g., 2021 Washers vs. 2023 Washer).
-- Strategy: Built a Python-logic inspired Regex parser in SQL.
-- Result: Successfully extracted 10+ attributes (Series, Capacity, Year) from unstructured strings, making the engine "future-proof" for new model releases.
+The most complex part of this project was data normalization. Model naming patterns changed every year and varied by product group (e.g., 2021 Washers vs. 2023 Washer; 2024 Dryers vs. 2024 Refrigerators).
+- Strategy: implement Regex parser in SQL after identify naming patters within each product group
+- Result: Successfully extracted 10+ attributes (Series, Capacity, Year) from unstructured strings, making the engine "future-proof" for new model releases
 
 ## Solution
 Developed a recommendation system that generates **top 5 alternative products per model** based on structured similarity logic and business constraints.
 
 The system supports:
-- Refrigerator, Washer, Dryer, WashTower, MWO, and TV
+- Refrigerator, Washer, Dryer, WashTower, Microwaves, and TV
 - Same-color and different-color recommendations
 - Inventory-aware decision making
 
@@ -35,17 +36,15 @@ The system supports:
 
 ### Ranking Priority
 #### Home Appliances (H&A)
-1. Same organization code  
-2. Same product type  
-3. Same color  
-4. Price proximity  
-5. Capacity / dimension similarity  
+1. Same product type  
+2. Same color  
+3. Price proximity  
+4. Capacity / dimension similarity  
 
 #### TV
-1. Same organization code  
-2. Same product type  
-3. Equal or larger screen size  
-4. Price proximity  
+1. Same product type  
+2. Equal or larger screen size  
+3. Price proximity  
 
 ## Approach
 ### 1. Feature Engineering
@@ -61,7 +60,7 @@ The system supports:
 
 ### 3. Ranking & Selection
 - Applied prioritization logic using SQL window functions
-- Generated **top 5 ranked alternatives per product**
+- Generated **top 5 ranked alternatives per product** based on inventory availablity at each designated warehouse.
 
 ## System Flow
 
@@ -83,7 +82,7 @@ The recommendation engine follows a structured pipeline from raw product data to
 
 ## Example Output (Agent View)
 
-The recommendation engine is integrated into an internal tool used by call center agents.
+The recommendation engine is at the backend and output tables are called in the frontend consultation screen used by call center agents.
 
 ### Washer Example
 ![Washer Example](agent-view/washer_recommendation_example.png)
@@ -92,7 +91,8 @@ The recommendation engine is integrated into an internal tool used by call cente
 ![Dryer Example](agent-view/dryer_recommendation_example.png)
 
 - Displays top alternative models based on similarity logic  
-- Highlights differences in product type, size, and color  
+- Highlights differences in product type, size, and color
+- Incorporates customer preference (prioritize same color vs. prioritize same dimensions)  
 - Enables faster and more consistent exchange decisions  
 
 ## Impact
