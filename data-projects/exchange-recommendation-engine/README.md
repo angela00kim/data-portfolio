@@ -2,17 +2,17 @@
 
 ## Overview
 Built a SQL-based recommendation engine to optimize product exchange decisions and reduce unnecessary buybacks.
-
 This system was developed as part of an executive-sponsored initiative and integrated into an internal tool used by call center agents to guide real-time exchange decisions across multiple product categories.
-
----
 
 ## Business Problem
 - High buyback rate (~71%) compared to exchanges (~29%)
 - No standardized method to recommend alternative products
 - Manual and inconsistent decision-making across agents and product groups
 
----
+## Challenge: Schema Complexity
+The most complex part of this project was data normalization. Model naming patterns changed every year and varied by product group (e.g., 2021 Washers vs. 2023 Washer).
+- Strategy: Built a Python-logic inspired Regex parser in SQL.
+- Result: Successfully extracted 10+ attributes (Series, Capacity, Year) from unstructured strings, making the engine "future-proof" for new model releases.
 
 ## Solution
 Developed a recommendation system that generates **top 5 alternative products per model** based on structured similarity logic and business constraints.
@@ -21,8 +21,6 @@ The system supports:
 - Refrigerator, Washer, Dryer, WashTower, MWO, and TV
 - Same-color and different-color recommendations
 - Inventory-aware decision making
-
----
 
 ## Recommendation Logic
 
@@ -35,10 +33,7 @@ The system supports:
 - **Product Type**: must match category (e.g., French Door, Top Load, OLED)  
 - **Color Options**: same or different  
 
----
-
 ### Ranking Priority
-
 #### Home Appliances (H&A)
 1. Same organization code  
 2. Same product type  
@@ -52,10 +47,7 @@ The system supports:
 3. Equal or larger screen size  
 4. Price proximity  
 
----
-
 ## Approach
-
 ### 1. Feature Engineering
 - Extracted structured attributes from model names using pattern matching (REGEXP)
 - Standardized product types, capacity, and model groupings
@@ -71,7 +63,6 @@ The system supports:
 - Applied prioritization logic using SQL window functions
 - Generated **top 5 ranked alternatives per product**
 
----
 ## System Flow
 
 The recommendation engine follows a structured pipeline from raw product data to agent-facing output:
@@ -90,8 +81,6 @@ The recommendation engine follows a structured pipeline from raw product data to
 [Agent View (UI)]
 ```
 
----
-
 ## Example Output (Agent View)
 
 The recommendation engine is integrated into an internal tool used by call center agents.
@@ -106,22 +95,16 @@ The recommendation engine is integrated into an internal tool used by call cente
 - Highlights differences in product type, size, and color  
 - Enables faster and more consistent exchange decisions  
 
----
-
 ## Impact
 - Increased exchange rate from **29% → 45%** (+16pp)
 - Reduced unnecessary buybacks
 - Estimated **~$151K monthly cost savings**
 - Standardized decision-making across product categories
 
----
-
 ## Tech Stack
 - SQL (BigQuery)
 - Data modeling & transformation
 - Window functions & ranking logic
-
----
 
 ## Notes
 - Raw data are not included due to data privacy policies  
