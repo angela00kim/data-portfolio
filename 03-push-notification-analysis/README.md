@@ -4,6 +4,9 @@
 Analyzed 2.93M push notifications sent to ThinQ app users over a 2 year time period to identify engagement patterns and optimize notification strategy — resulting in a **76% increase in read rates**.
 
 ## Business Problem
+Observed a consistent decrease in read rate for action requiring logics that needed customer or technician insepction. Examples included Dryer duct build-up, Washer water temperature issues, Oven cleaning, Refrigerator filter changes. If unsolved, could hinder product performance and customer satisfaction. Current read rate data does not show repeated notifications or exact number of unique customers that received the notification. Need a plan to increase notification read rate. 
+
+## Approach
 Raw notification data arrived as dozens of fragmented CSV exports with inconsistent encodings, granular diagnosis codes, and no standardized  product or engagement labels. Before any analysis could happen, the data needed to be consolidated, cleaned, and restructured.
 
 ## Approach
