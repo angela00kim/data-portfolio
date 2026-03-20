@@ -1,29 +1,64 @@
-# EV Registration Analysis Dashboard (Tableau)
+# Electric Vehicle Adoption Analysis (Tableau Dashboard)
 
 ## Overview
-Analyzed electric vehicle (EV) registration data in Washington State (2015–2024) using Tableau to uncover trends in adoption, market structure, and geographic distribution.
 
-## Dashboard
-🔗 Tableau Dashboard: https://public.tableau.com/shared/BHDR2JKR6?:display_count=n&:origin=viz_share_link
+This project analyzes electric vehicle (EV) registration trends in Washington State using publicly available data from the Washington State Department of Licensing.
 
-## Key Analysis Areas
-- Time-series analysis of EV adoption growth
-- BEV vs PHEV market composition
-- Top manufacturers and model dominance
-- Geographic distribution by county
-- Used EV market behavior
-- Vehicle age and lifecycle trends
+The goal was to explore adoption patterns, geographic distribution, and market structure of EVs over the past decade through interactive data visualization.
 
-## Key Insights
-- EV registrations grew significantly from ~23K (2015) to 300K+ (2024)
-- BEVs increasingly dominate over PHEVs
-- Tesla and Nissan lead market share
-- Adoption is highly concentrated in a few counties
-- Used EV transactions peak around 3 years of age
+🔗 **Live Dashboard:**
+https://public.tableau.com/shared/BHDR2JKR6?:display_count=n&:origin=viz_share_link
 
-## Tools
-- Tableau
-- Data aggregation & visualization
+---
+
+## Key Questions
+
+* How has EV adoption changed over time?
+* Where are EVs most concentrated geographically?
+* Which manufacturers and models dominate the EV market?
+* How does EV growth vary across regions?
+
+---
+
+## Dashboard Highlights
+
+### EV Adoption Growth Over Time
+
+![EV Growth](screenshots/ev-growth.png)
+
+EV registrations have increased significantly over time, with consistent year-over-year growth indicating accelerating adoption of electric vehicles.
+
+---
+
+### Geographic Distribution of EVs
+
+![EV Map](screenshots/ev-map.png)
+
+EV adoption is concentrated in a few key counties, with King County leading significantly in total registrations. Regional disparities highlight differences in infrastructure and adoption rates.
+
+---
+
+### EV Market Structure
+
+![EV Market](screenshots/ev-market.png)
+
+The EV market is dominated by a small number of manufacturers, with Tesla and Nissan leading in total registrations. A limited number of models account for a large share of total EV adoption.
+
+---
+
+## Tools & Skills
+
+* Tableau (Dashboard Design & Storytelling)
+* Data Visualization & Exploratory Analysis
+* Geographic Analysis (Map Visualizations)
+* Trend Analysis & Time Series Interpretation
+
+---
 
 ## Notes
-This project was completed as part of a graduate-level group project. My contributions focused on data analysis, dashboard design, and insight generation.
+
+* This project was completed as part of a graduate-level data analytics course.
+* Dashboard design and analysis were conducted collaboratively with two team members.
+* Focus was placed on translating data into clear, actionable insights through visualization.
+
+---
