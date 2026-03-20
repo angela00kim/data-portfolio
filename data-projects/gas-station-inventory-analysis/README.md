@@ -1,50 +1,94 @@
-# Gas Station Inventory Optimization (Python Analysis)
+# Gas Station Inventory Optimization
 
 ## Overview
-This project analyzes fuel inventory and purchasing patterns across eight gas stations in Canada to identify opportunities for cost optimization and operational efficiency.
-Using multiple datasets (tanks, invoices, fuel levels, and locations), we explored how inventory levels, pricing, and purchasing behavior impact fuel procurement costs.
 
-## Key Objectives
-* Understand fuel consumption and inventory patterns across stations
-* Analyze purchasing behavior and supplier discount utilization
-* Evaluate the impact of fuel price fluctuations on ordering decisions
-* Recommend strategies to reduce costs and improve operational efficiency
+Analyzed fuel inventory and purchasing behavior across multiple gas stations to identify inefficiencies in replenishment strategy and quantify cost-saving opportunities through optimized ordering decisions.
+
+This project focuses on balancing inventory levels with supplier discount thresholds to reduce purchasing costs while maintaining service availability.
+
+---
+
+## Business Problem
+
+Gas stations must determine:
+
+* **When to reorder fuel**
+* **How much to order**
+
+Ordering too frequently leads to:
+
+* Lower discount eligibility
+* Higher total purchasing costs
+
+Ordering too infrequently leads to:
+
+* Risk of stockouts
+* Poor customer experience
+
+The goal was to identify an **optimal inventory and purchasing strategy** using historical data.
+
+---
+
+## Approach
+
+### Data Processing
+
+* Cleaned and standardized multiple datasets (fuel levels, invoices, tank capacity, locations)
+* Merged datasets using consistent location and tank identifiers
+* Converted and aligned timestamp data for time-series analysis
+
+### Analysis
+
+* Evaluated inventory trends at the tank level
+* Analyzed purchasing patterns across stations and time
+* Assessed discount tier utilization based on purchase volume
+* Examined relationship between fuel price and purchasing behavior
+
+---
 
 ## Key Insights
-### Inventory & Consumption Patterns
-* Fuel levels showed consistent cyclical patterns driven by consumption and refilling schedules
-* Some tanks frequently dropped near critical thresholds, indicating inefficient replenishment timing
 
-### Pricing & Purchasing Behavior
-* Fuel purchase volumes decreased significantly during periods of high prices
-* Stations did not consistently take advantage of supplier discount tiers
+### 1. Inventory Fluctuation Indicates Inefficient Replenishment
 
-### Optimization Opportunities
-* Coordinating larger purchase quantities can unlock higher discount tiers
-* Increasing storage capacity can reduce procurement costs and refill frequency
-* Optimized purchasing strategies could generate meaningful annual cost savings
+<img src="images/fuel_trend.png" width="500"/>
 
-## Methods
-* Data cleaning and preprocessing (handling missing values, datetime conversion, dataset merging)
-* Exploratory data analysis using Python (Pandas, Matplotlib)
-* Time series analysis of fuel levels and pricing trends
-* Comparative analysis of purchasing strategies vs. optimal scenarios
+Fuel levels show significant variability, suggesting inconsistent ordering timing and lack of standardized replenishment strategy.
 
-## Tools & Skills
-* Python (Pandas, NumPy, Matplotlib)
-* Data Cleaning & Feature Engineering
-* Exploratory Data Analysis (EDA)
-* Time Series Analysis
-* Business Optimization & Cost Analysis
+---
 
-## Project Structure
-```bash
-gas-station-inventory-analysis/
-├── README.md
-├── analysis.ipynb
-```
+### 2. Purchasing Behavior is Not Optimized Over Time
 
-## Notes
-* This project was completed as part of a graduate-level data analytics course
-* Conducted collaboratively with two team members
-* Focused on translating data analysis into actionable business recommendations
+<img src="images/purchase_trend.png" width="500"/>
+
+Monthly purchase patterns reveal irregular ordering behavior, indicating missed opportunities for bulk purchasing optimization.
+
+---
+
+### 3. Discount Opportunities Are Underutilized
+
+<img src="images/discount_distribution.png" width="500"/>
+
+Many purchases fall below optimal discount thresholds, resulting in avoidable cost inefficiencies.
+
+---
+
+## Impact
+
+* Identified opportunities to increase bulk purchasing and improve discount utilization
+* Demonstrated how optimized ordering strategies can reduce fuel procurement costs
+* Provided data-driven recommendations to improve inventory stability and operational efficiency
+
+---
+
+## Tech Stack
+
+* Python (Pandas, NumPy)
+* Data Visualization (Matplotlib)
+* Jupyter Notebook
+
+---
+
+## Full Analysis
+
+View the full notebook with code and analysis:
+[View Notebook](analysis.html)
