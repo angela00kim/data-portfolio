@@ -6,8 +6,8 @@
 Built a SQL pipeline to process and structure app ratings and customer reviews (VOC) data for dashboard reporting. This pipeline standardizes raw review data from multiple sources and enables analysis of app performance, user feedback, and issue trends.
 
 ## Dashboard
-![Dashboard Screenshot](screenshots/app_rating_reviews.png)
-![Dashboard Screenshot](screenshots/app_reviews_breakdown.png)
+![Dashboard Screenshot](images/app_rating_reviews.png)
+![Dashboard Screenshot](images/app_reviews_breakdown.png)
 
 ## Context
 
