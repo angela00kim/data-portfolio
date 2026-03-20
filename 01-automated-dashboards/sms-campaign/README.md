@@ -5,7 +5,7 @@
 Built a SQL pipeline to track user conversion from SMS campaigns to account signup and product registration. The pipeline attributes downstream user actions to SMS activity and enables measurement of campaign effectiveness.
 
 ## Dashboard
-![Dashboard Screenshot](screenshots/sms_activities.png)
+![Dashboard Screenshot](images/sms_activities.png)
 
 ## Context
 
