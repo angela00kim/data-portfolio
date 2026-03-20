@@ -4,6 +4,10 @@
 
 Built a SQL-based KPI pipeline and dashboard used for monthly and weekly executive reporting. This replaced static Excel reports and is used during leadership meetings to review performance and drill into specific metrics.
 
+## Dashboard
+![Dashboard Screenshot](screenshots/KPI-Overview.png)
+![Dashboard Screenshot](screenshots/Funnel.png)
+
 ## Context
 
 Previously, KPI reporting was delivered through manually prepared Excel files. This made it difficult to:
