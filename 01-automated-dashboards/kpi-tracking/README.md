@@ -60,3 +60,8 @@ Metrics are tracked across:
 ## Files
 
 * `kpi_pipeline.sql` — core SQL logic for KPI aggregation (sales, connected, registered)
+
+## Notes
+- Raw data are not included due to data privacy policies  
+- Sensitive fields have been anonymized  
+- Logic and structure are preserved to demonstrate system design and SQL capability
