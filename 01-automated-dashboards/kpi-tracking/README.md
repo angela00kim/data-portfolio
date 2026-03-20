@@ -38,6 +38,8 @@ Metrics are tracked across:
 
 * product groups (Total, TV, H&A)
 * monthly and weekly timeframes
+* customer care programs
+* ad hoc Campaigns
 
 ## Approach
 
