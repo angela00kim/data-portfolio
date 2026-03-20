@@ -1,4 +1,4 @@
-# Data Analytics Portfolio – Kanghee Kim
+# Business Intelligence & Data Analytics Portfolio
 
 ## Overview
 Welcome! This repository showcases my work as a Data Professional, with a focus on architecting end-to-end BI solutions, automating legacy workflows, and driving executive-level decision-making.
@@ -7,21 +7,7 @@ The projects here reflect my experience at LG Electronics, where I focused on cu
 
 ---
 
-## ⭐ Highlight Project
-
-### Exchange Recommendation Engine
-
-**(Work Project – LG Electronics)**
-
-* Built a data-driven recommendation system to match users with optimal exchange options
-* Developed SQL-based logic to evaluate multiple criteria and improve decision outcomes
-* Most technically complex project involving structured data processing and business logic
-
-📁 `02-exchange-recommendation-engine`
-
----
-
-## Work Projects (LG Electronics)
+## Work Experience Projects
 
 ### Automated Dashboarding & Analytics
 
@@ -29,17 +15,27 @@ The projects here reflect my experience at LG Electronics, where I focused on cu
 
 * **KPI Tracking Dashboard**
 
-  * Built SQL pipeline and executive dashboard for weekly/monthly reporting
+  * Built SQL-based pipeline and executive dashboard for weekly/monthly reporting
   * Replaced manual Excel reporting with automated analytics
 
 * **SMS Campaign Analysis**
 
-  * Evaluated campaign performance and customer engagement metrics
+  * Analyzed campaign performance and customer engagement metrics
   * Identified opportunities to improve targeting and conversion
 
 * **App Reviews Analysis**
 
-  * Analyzed customer feedback trends to identify product improvement areas
+  * Performed analysis on customer feedback to identify product improvement areas
+
+---
+
+### Exchange Recommendation Engine
+
+📁 `02-exchange-recommendation-engine`
+
+* Developed a data-driven recommendation system to match users with optimal exchange options
+* Built SQL-based logic to evaluate multiple criteria and improve decision outcomes
+* Most technically complex project involving structured data processing and business logic
 
 ---
 
@@ -67,8 +63,8 @@ The projects here reflect my experience at LG Electronics, where I focused on cu
 
 📁 `academic-portfolio/ev-tableau-dashboard`
 
-* Built interactive Tableau dashboard analyzing electric vehicle trends and market distribution
-* Focused on data storytelling and visualization best practices
+* Built interactive dashboard analyzing electric vehicle trends and market distribution
+* Focused on clear data storytelling and visualization
 
 ---
 
@@ -76,7 +72,7 @@ The projects here reflect my experience at LG Electronics, where I focused on cu
 
 * **Languages:** Python (Pandas, NumPy), SQL
 * **Visualization:** Tableau, Matplotlib
-* **Data Workflows:** Data cleaning, transformation, and analysis
+* **Data Workflows:** Data cleaning, transformation, analysis
 * **Analytics:** Dashboarding, trend analysis, business insights
 
 ---
