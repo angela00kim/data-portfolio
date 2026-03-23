@@ -1,16 +1,11 @@
 # Data Systems & Analytics Engineering Portfolio
 
 ## Overview
+This repository showcases my work building data pipelines and systems across customer engagement, operations, and product workflows.
 
-This repository showcases my work as a Data Professional, building data systems, pipelines, and analytics solutions across customer engagement, operations, and decision-making. designed and built data solutions across multiple projects. 
+Projects include executive KPI dashboards, rule-based recommendation engine, and push notification optimization focused on app user engagement.
 
-My focus is on:
-
-* designing scalable SQL and Python pipelines
-* structuring messy data into usable systems
-* building reusable logic for analytics, attribution, and decision support
-
-The projects reflect my experience at LG Electronics as well as my graduate studies at Johns Hopkins University.
+The work reflects my experience at LG Electronics, where I built data solutions across multiple initiatives, as well as my graduate studies at Johns Hopkins University.
 
 ---
 
