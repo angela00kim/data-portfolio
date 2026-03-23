@@ -75,6 +75,11 @@ Note:
   <img src="analysis-summary/results.png" width="600"/>
 </p>
 
+### Dashboard Tracking
+<p align="center">
+  <img src="analysis-summary/readrate_dashboard.png" width="800"/>
+</p>
+
 
 ## Validation & User Research
 
