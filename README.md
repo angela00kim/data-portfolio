@@ -71,7 +71,7 @@ The projects here reflect my experience at LG Electronics, where I focused on cu
 ## Technical Skills
 
 * **Languages:** Python (Pandas, NumPy), SQL
-* **Visualization:** Tableau, Matplotlib
+* **Visualization:** Tableau, Matplotlib, Google Looker Studio
 * **Data Workflows:** Data cleaning, transformation, analysis
 * **Analytics:** Dashboarding, trend analysis, business insights
 
