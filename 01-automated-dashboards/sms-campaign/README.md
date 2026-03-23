@@ -29,7 +29,7 @@ Developed a pipeline to link campaign exposure to downstream user actions.
 * Identified high-performing messaging strategies
 * Supported rapid iteration by modifying SMS content
   
-### Dashboard
+### Dashboard Examples
 <p align="center">
   <img src="images/sms_activities.png" width="800"/>
 </p>
