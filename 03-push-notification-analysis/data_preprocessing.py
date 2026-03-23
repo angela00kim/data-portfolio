@@ -1,8 +1,7 @@
 """
 Push Notification Data Preprocessing
 --------------------------------------
-Ingests raw ThinQ app push notification exports, standardizes fields, and splits output by notification logic type for downstream analysis.
-Raw data not included due to confidentiality.
+Raw data and results not included due to confidentiality.
 """
 
 import os
@@ -20,7 +19,7 @@ OUTPUT_PATH   = "data/processed_logics"
 # ---------------------------------------------------------------------------
 
 def map_product(service_product_name: str) -> str:
-    """Map raw SERVICE_PRODUCT_NAME to a standardized product category."""
+    """Map product name to product category."""
     mapping = {
         "Range/Oven/Electric Cooktop": "Oven",
         "French Door":                 "Refrigerator",
@@ -35,7 +34,7 @@ def map_product(service_product_name: str) -> str:
 
 
 def map_logic(diagnosis_type: str) -> str:
-    """Normalize granular DIAGNOSIS_TYPE codes into grouped logic labels."""
+    """Group DIAGNOSIS_TYPE codes into logic labels."""
     diagnosis_type = str(diagnosis_type)
 
     exact = {
@@ -65,7 +64,7 @@ def map_logic(diagnosis_type: str) -> str:
 
 
 def map_status(status: str) -> str:
-    """Convert raw delivery status to a human-readable engagement label."""
+    """Convert delivery status into Read/Unread"""
     return "Unread" if status == "DELIVERED" else "Read"
 
 
@@ -74,7 +73,6 @@ def map_status(status: str) -> str:
 # ---------------------------------------------------------------------------
 
 def load_raw_data(folder: str) -> pd.DataFrame:
-    """Read all CSVs in folder, handling UTF-8 and UTF-16 encodings."""
     csv_files = [f for f in os.listdir(folder) if f.endswith(".csv")]
     if not csv_files:
         raise FileNotFoundError(f"No CSV files found in: {folder}")
@@ -96,7 +94,6 @@ def load_raw_data(folder: str) -> pd.DataFrame:
 
 
 def preprocess(df: pd.DataFrame) -> pd.DataFrame:
-    """Select columns, engineer features, filter bad date window, deduplicate."""
     df = df[[
         "MBR_NO", "DEVICE_ID", "SERVICE_PRODUCT_NAME",
         "DIAGNOSIS_TYPE", "STATUS", "DELIVERY_DATE",
@@ -116,7 +113,7 @@ def preprocess(df: pd.DataFrame) -> pd.DataFrame:
     df["DEVICE_LOGIC"]     = df["DEVICE_ID"] + df["DIAGNOSIS_TYPE"]
     df["MBR_DEVICE_LOGIC"] = df["MBR_NO"] + df["DEVICE_ID"] + df["DIAGNOSIS_TYPE"]
 
-    # Exclude dates
+    # Exclude specific dates
     df = df[(df["DATE"] < "2024-02-05") | (df["DATE"] > "2024-02-17")]
     df = df.drop_duplicates()
 
@@ -124,7 +121,7 @@ def preprocess(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def export_by_logic(df: pd.DataFrame, output_dir: str) -> None:
-    """Write one CSV per notification logic type."""
+    """save one CSV per notification logic type."""
     os.makedirs(output_dir, exist_ok=True)
     for logic, group in df.groupby("LOGIC"):
         out_path = os.path.join(output_dir, f"{logic.upper()}.csv")
