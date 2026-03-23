@@ -6,7 +6,6 @@ Analyzed 2.9M+ push notifications over a 2-year period to identify engagement ga
 
 Led a cross-functional effort across inventory, customer care, digital experience, and parts teams to improve notification effectiveness and user engagement.
 
----
 
 ## Business Problem
 
@@ -20,7 +19,6 @@ Key challenges:
 * No visibility into user-level exposure or behavior over time
 * Low perceived urgency and unclear messaging
 
----
 
 ## Data Challenges
 
@@ -29,7 +27,6 @@ Key challenges:
 * Granular and inconsistent diagnosis codes
 * No standardized product or engagement labels
 
----
 
 ## Data Processing (Python)
 
@@ -42,7 +39,6 @@ Built a preprocessing pipeline to structure large-scale notification data for an
 * Engineered time-based features (month, year, YYYYMM)
 * Filtered known bad data window (Feb 5–17, 2024)
 
----
 
 ## Analysis & Key Insights
 
@@ -65,7 +61,6 @@ Built a preprocessing pipeline to structure large-scale notification data for an
   * low urgency
   * notification overload
 
----
 
 ## Example Analysis Output
 
@@ -75,10 +70,11 @@ Note:
 
 * Logic names and sensitive fields are anonymized
 * Device counts and structure reflect real production-scale data
+  
+<p align="center">
+  <img src="analysis-summary/results.png" width="600"/>
+</p>
 
-![results](analysis-summary/results.png)
-
----
 
 ## Validation & User Research
 
@@ -94,7 +90,6 @@ Note:
   * diagnostic accuracy
   * disconnect between detection and user response
 
----
 
 ## Solution
 
@@ -105,13 +100,10 @@ Implemented system-level optimizations:
 * Time zone–based delivery optimization
 * Notification grouping to reduce notification overload
 
----
-
 ## Impact
 
 * **76% increase in push notification read rate**
 
----
 
 ## Tech Stack
 
@@ -119,7 +111,6 @@ Implemented system-level optimizations:
 * Data preprocessing and transformation
 * Behavioral analysis
 
----
 
 ## Note
 
