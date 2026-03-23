@@ -61,8 +61,13 @@ The dataset is structured to **mirror dashboard layouts**, enabling:
 As a result, reporting shifted from manual data preparation to **direct visualization and stakeholder communication**.
 
 ## Dashboard
-![Dashboard Screenshot](images/app_rating_reviews.png)
-![Dashboard Screenshot](images/app_reviews_breakdown.png)
+<p align="center">
+  <img src="images/app_rating_reviews.png" width="800"/>
+</p>
+
+<p align="center">
+  <img src="images/app_reviews_breakdown.png" width="800"/>
+</p>
 
 
 ## Impact
