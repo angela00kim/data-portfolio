@@ -3,7 +3,7 @@
 ## Overview
 
 Designed and implemented a SQL-based pipeline to transform unstructured app review data into a standardized, analysis-ready dataset.
-This system replaced a manual tagging workflow and enabled scalable, repeatable reporting of customer feedback for product and engineering teams.
+This system replaced a manual tagging workflow and enabled scalable, repeatable reporting of customer feedback for product and app engineering teams.
 
 ## Business Problem
 
@@ -13,7 +13,7 @@ Customer reviews were tagged by call center agents, but:
 * Data existed in multiple fragmented structures (A/B/C case formats)
 * Manual cleanup and categorization were required before analysis
 
-A teammate previously spent **15+ hours per week manually cleaning and tagging data in Excel**, limiting the ability to generate timely insights or build structured reports.
+A teammate previously spent 20+ hours each week manually cleaning and tagging data in Excel, limiting the ability to generate timely insights or build structured reports.
 
 ## Solution
 
