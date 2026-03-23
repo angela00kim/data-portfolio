@@ -77,6 +77,7 @@ Note:
 * Device counts and structure reflect real production-scale data
 
 [Insert anonymized table image here]
+03-push-notification-analysis/analysis-summary/results.png
 
 ---
 
