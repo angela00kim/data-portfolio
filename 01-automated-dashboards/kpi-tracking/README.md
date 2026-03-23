@@ -59,8 +59,13 @@ The system powers dashboards used for:
 Leadership can directly access and explore data, shifting reporting from a **push model (manual reports)** to a **self-service model (live dashboards)**.
 
 ### Dashboard Examples
-![Dashboard Screenshot](images/kpi_overview.png)
-![Dashboard Screenshot](images/funnel.png)
+<p align="center">
+  <img src="images/kpi_overview.png" width="900"/>
+</p>
+
+<p align="center">
+  <img src="images/funnel.png" width="900"/>
+</p>
 
 ## Impact
 
