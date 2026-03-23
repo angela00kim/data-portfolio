@@ -1,26 +1,74 @@
-# Push Notification Optimization – Data Preprocessing (Python)
+# Push Notification Optimization – LG ThinQ
 
 ## Overview
-Analyzed 2.93M push notifications sent to ThinQ app users over a 2 year time period to identify engagement patterns and optimize notification strategy — resulting in a **76% increase in read rates**.
+Analyzed 2.93M push notifications over a 2-year period to identify engagement gaps and redesign notification strategy, resulting in a 76% increase in read rates.
 
 ## Business Problem
-Observed a consistent decrease in read rate for action requiring logics that needed customer or technician insepction. Examples included Dryer duct build-up, Washer water temperature issues, Oven cleaning, Refrigerator filter changes. If unsolved, could hinder product performance and customer satisfaction. Current read rate data does not show repeated notifications or exact number of unique customers that received the notification. Need a plan to increase notification read rate. 
+Push notifications for appliance maintenance (e.g., dryer duct cleaning, water temperature issues, filter replacement) showed consistently low engagement, despite being critical for product performance and customer satisfaction.
 
-## Challenge
-Raw notification delivery data arrived in multiple big file that could not be opened in excel due to the size. The files had inconsistent encodings, granular diagnosis codes, and no standardized  product or engagement labels.
+Challenges included:
+- Low visibility and user awareness  
+- Repeated notifications with declining engagement  
+- No tracking of customer-level exposure or behavior over time  
 
-## Approach
-* Combine and ingests multiple large CSV files with mixed encodings (UTF-8/UTF-16)
-* Standardizes product categories across 7 appliance types
-* Groups 20+ granular diagnosis codes into analyzable notification logic types
-* Derives engagement status (Read vs. Unread) from raw delivery flags
-* Extracts date dimensions (month, year, YYYYMM) for trend analysis
-* Filters a known bad data window (Feb 5–17, 2024)
-* Splits output into separate files per logic type for downstream analysis
+## Data Challenges
+- Raw data distributed across multiple large CSV files (not Excel-readable)  
+- Mixed encodings (UTF-8 / UTF-16)  
+- Granular, inconsistent diagnosis codes  
+- No standardized product or engagement labels  
 
-## Tools
-Python, Excel
+## Data Processing (Python)
+- Ingested and consolidated large-scale datasets using Python (Pandas)  
+- Standardized product categories across 7 appliance types  
+- Grouped 20+ diagnosis codes into unified notification logic categories  
+- Derived engagement status (read vs. unread) from delivery flags  
+- Built time-based features (month, year, YYYYMM) for trend analysis  
+- Filtered known bad data windows (Feb 5–17, 2024)  
+
+## Key Insights
+
+### Notification fatigue
+- Read rates declined significantly after 3 repeated notifications  
+- Repeated exposure led to progressively lower engagement  
+
+### Low baseline engagement
+- Many notification types had read rates below 17%  
+- Some logics performed significantly worse  
+
+### Gap between detection and action
+- System correctly detected issues  
+- Users ignored notifications due to:
+  - unclear messaging  
+  - lack of urgency  
+  - notification overload  
+
+## Validation and User Research
+- Conducted 3 rounds of customer surveys (~4K responses)  
+- Identified key drivers of disengagement:
+  - notification fatigue across apps and devices  
+  - low perceived urgency  
+  - unclear instructions  
+
+- Performed field validation (10 customers) to confirm:
+  - detection accuracy  
+  - mismatch between alerts and user action  
+
+## Solution
+Implemented system-level optimizations:
+
+- Suppression logic to reduce repeated exposure  
+- Content redesign to improve clarity and actionability  
+- Time zone–based delivery to improve visibility  
+- Grouped notifications to minimize notification overload  
+
+## Impact
+- 76% increase in push notification read rate  
+
+## Tech Stack
+- Python (Pandas)  
+- Data preprocessing and transformation  
+- Behavioral analysis  
 
 ## Note
-* Raw data and final analysis are not included due to company data confidentiality.
-* This script represents the preprocessing layer of a larger end-to-end analytics workflow.
+- Raw data and full analysis are not included due to confidentiality  
+- This repository focuses on the data preprocessing and analytical foundation of the project  
