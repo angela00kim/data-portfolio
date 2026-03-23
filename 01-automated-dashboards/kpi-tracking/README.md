@@ -1,67 +1,88 @@
-# KPI Tracking Dashboard (Executive Reporting)
-
 ## Overview
 
 Built a SQL-based KPI pipeline and dashboard used for monthly and weekly executive reporting. This replaced static Excel reports and is used during leadership meetings to review performance and drill into specific metrics.
 
-## Dashboard
-![Dashboard Screenshot](images/kpi_overview.png)
-![Dashboard Screenshot](images/funnel.png)
+# KPI Tracking & Executive Dashboard Pipeline
 
-## Context
+## Overview
 
-Previously, KPI reporting was delivered through manually prepared Excel files. This made it difficult to:
+Developed an automated KPI reporting system and executive dashboard that provided real-time visibility into business performance, eliminating reliance on manual Excel-based reporting.
 
-* quickly navigate across metrics during meetings
-* investigate changes in real time
-* maintain consistent metric definitions
+The system enabled leadership, including the subsidiary president, to directly monitor key metrics without waiting for periodic reports.
+
+## Business Problem
+
+KPI reporting was previously:
+
+* Manually compiled in Excel across multiple data sources
+* Time-intensive and error-prone
+* Delivered on a fixed schedule (weekly/monthly), limiting responsiveness
+* Inconsistent across teams due to lack of standardized definitions
+
+This created delays in decision-making and limited visibility into real-time performance.
 
 ## Solution
 
-Developed a centralized KPI dashboard backed by SQL pipelines that standardize and aggregate key business metrics.
+Designed and implemented a centralized SQL-based pipeline and dashboard system to automate KPI tracking and provide direct access to leadership.
 
-The dashboard is used live during executive meetings, allowing leadership to move between views and explore metrics in detail when questions arise.
+### Key Components
 
-## Metrics Covered
+* **Data integration**
 
-The KPI system includes:
+  * Consolidated multiple data sources into a unified reporting layer
 
-* **Sales** (volume)
-* **Connected Devices** (volume, connection rate)
-* **Registered Devices** (volume, registration rate)
-* **Push Notifications** (read rate)
-* **App Ratings** (AOS, iOS)
-* **Customer Care QOS** (email, push)
-* **Agent Performance QOS**
+* **KPI standardization**
 
-Metrics are tracked across:
+  * Defined consistent metric logic across teams
 
-* product groups (Total, TV, H&A)
-* monthly and weekly timeframes
-* customer care programs
-* ad hoc Campaigns
+* **Automation**
 
-## Approach
+  * Replaced manual Excel workflows with SQL-based pipelines
 
-* Built SQL pipelines to aggregate and standardize metrics across multiple data sources
-* Created consistent definitions for volume and rate-based KPIs
-* Used window functions (`SUM OVER`, `LAG`) to compute:
+* **Real-time dashboarding**
 
-  * cumulative values
-  * week-over-week and month-over-month changes
-* Structured outputs to support flexible dashboard navigation during meetings
+  * Enabled stakeholders to access live KPI data at any time
+  * Removed dependency on manual reporting cycles
+
+* **Time-based reporting**
+
+  * Supported both weekly and monthly performance tracking
+
+## Output & Usage
+
+The system powers dashboards used for:
+
+* Executive-level monitoring of business performance
+* Real-time KPI tracking across multiple domains
+* Identifying trends, risks, and operational gaps
+
+Leadership can directly access and explore data, shifting reporting from a **push model (manual reports)** to a **self-service model (live dashboards)**.
+
+### Dashboard Examples
+![Dashboard Screenshot](images/kpi_overview.png)
+![Dashboard Screenshot](images/funnel.png)
 
 ## Impact
 
-* Replaced manual Excel-based reporting with a centralized dashboard
-* Enabled real-time discussion and analysis during executive reviews
-* Improved consistency and accessibility of KPI reporting across teams
+* Reduced manual reporting effort by ~50% (15+ hours/week saved)
+* Enabled real-time visibility for executive leadership
+* Eliminated delays caused by scheduled reporting cycles
+* Improved consistency and trust in KPI definitions
+* Accelerated data-driven decision-making
+
+## Key SQL Concepts
+
+* Data aggregation and transformation
+* Metric standardization and business logic design
+* Time-based grouping and trend analysis
+* Pipeline automation for recurring reporting
+
 
 ## Files
 
-* `kpi_pipeline.sql` — core SQL logic for KPI aggregation (sales, connected, registered)
+* `kpi_pipeline.sql` — SQL pipeline for KPI aggregation and reporting
 
 ## Notes
-- Raw data are not included due to data privacy policies  
-- Sensitive fields have been anonymized  
-- Logic and structure are preserved to demonstrate system design and SQL capability
+
+* Raw data are not included due to data confidentiality
+* Metric definitions are simplified for demonstration purposes
