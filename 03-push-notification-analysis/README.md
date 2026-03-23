@@ -76,7 +76,7 @@ Note:
 * Logic names and sensitive fields are anonymized
 * Device counts and structure reflect real production-scale data
 
-![results](/analysis-summary/results.png)
+![results](analysis-summary/results.png)
 
 ---
 
