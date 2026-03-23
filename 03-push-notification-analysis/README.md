@@ -77,7 +77,7 @@ Note:
 
 ### Dashboard Tracking
 <p align="center">
-  <img src="analysis-summary/readrate_dashboard.png" width="800"/>
+  <img src="analysis-summary/readrate_dashboard.png" width="600"/>
 </p>
 
 
