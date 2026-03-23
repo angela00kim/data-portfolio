@@ -85,10 +85,14 @@ The recommendation engine follows a structured pipeline from raw product data to
 The recommendation engine is at the backend and output tables are called in the frontend consultation screen used by call center agents.
 
 ### Washer Example
-![Washer Example](agent-view/washer_recommendation_example.png)
+<p align="center">
+  <img src="agent-view/washer_recommendation_example.png" width="900"/>
+</p>
 
 ### Dryer Example
-![Dryer Example](agent-view/dryer_recommendation_example.png)
+<p align="center">
+  <img src="agent-view/dryer_recommendation_example.png" width="900"/>
+</p>
 
 - Displays top alternative models based on similarity logic  
 - Highlights differences in product type, size, and color
