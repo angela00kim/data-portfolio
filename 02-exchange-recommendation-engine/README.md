@@ -60,7 +60,7 @@ The system supports:
 
 ### 3. Ranking & Selection
 - Applied prioritization logic using SQL window functions
-- Generated **top 5 ranked alternatives per product** based on inventory availablity at each designated warehouse.
+- Generated **top 5 ranked alternatives per product** based on inventory availability at each designated warehouse.
 
 ## System Flow
 
