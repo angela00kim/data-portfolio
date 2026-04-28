@@ -1,4 +1,5 @@
 # Kanghee (Angela) Kim Data Portfolio
+Data Professional with 3+ years of experience a
 
 MS in Business Analytics & AI, Johns Hopkins University (Aug 2026)  
 Former Customer Data Analyst, LG Electronics  
