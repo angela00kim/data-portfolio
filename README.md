@@ -69,6 +69,7 @@ Behavioral analysis of 2.93M push notifications across 260K+ devices, identifyin
 → [View Project](04-push-notification-optimization/)
 
 ---
+*Projects 05-07 are components of the LG ThinQ Analytics Infrastructure — a centralized data platform built across multiple business units.*
 
 ## 05. KPI Dashboard Pipeline
 
