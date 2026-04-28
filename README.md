@@ -1,98 +1,103 @@
-# Data Systems & Analytics Engineering Portfolio
+# Kanghee (Angela) Kim — Data Portfolio
 
-## Overview
-This repository showcases my work building data pipelines and systems across customer engagement, operations, and product workflows.
-
-Projects include executive KPI dashboards, rule-based recommendation engine, and push notification optimization focused on app user engagement.
-
-The work reflects my experience at LG Electronics, where I built data solutions across multiple initiatives, as well as my graduate studies at Johns Hopkins University.
+MS in Business Analytics & AI, Johns Hopkins University (Aug 2026)  
+Former Customer Data Analyst, LG Electronics  
+[LinkedIn](https://www.linkedin.com/in/kanghee-angela-kim/)
 
 ---
 
-## Work Experience Projects
+## Projects
 
-### 01. Automated Dashboards & Analytics Infrastructure
-
-📁 `01-automated-dashboards/`
-
-End-to-end BI systems replacing manual workflows and enabling real-time reporting.
-
-#### KPI Tracking Dashboard
-
-📁 `01-automated-dashboards/kpi-tracking/`
-
-* Built SQL pipelines for executive KPI reporting
-* Integrated multiple data sources into a centralized dataset
-* Enabled leadership to monitor performance in real time instead of relying on manual reports
-
-#### App Reviews (VOC Pipeline)
-
-📁 `01-automated-dashboards/app-reviews/`
-
-* Standardized unstructured customer review data into structured categories (Level 1/2/3)
-* Built SQL pipeline replacing manual tagging done in Excel
-* Enabled scalable analysis and monthly reporting for product teams
-
-#### SMS Campaign Attribution
-
-📁 `01-automated-dashboards/sms-campaign/`
-
-* Developed pipeline to attribute user actions to campaign exposure
-* Enabled tracking across multiple channels (SMS, email, in-app)
-* Supported rapid campaign iteration by isolating performance drivers
-
----
-
-### 02. Exchange Recommendation Engine
-
-📁 `02-exchange-recommendation-engine/`
-
-Rule-based recommendation system for product exchanges.
-
-* Built SQL engine generating top 5 product alternatives across 200+ SKUs
-* Incorporated real-time inventory constraints across warehouses
-* Structured filtering and ranking logic for scalable decision-making
-
----
-
-### 03. Push Notification Optimization
-
-📁 `03-push-notification-analysis/`
-
-Behavioral analysis and system optimization of push notifications.
-
-* Processed large-scale notification data using Python
-* Standardized diagnosis logic and engagement metrics
-* Identified notification fatigue and low-performing segments
-* Supported system-level improvements in notification strategy
-
----
-
-## Academic Projects
-
-### EV Market Dashboard
-
-📁 `academic-portfolio/ev-tableau-dashboard/`
-
-* Built Tableau dashboard analyzing EV market trends
-
-### Gas Station Inventory Analysis
-
-📁 `academic-portfolio/gas-station-inventory-analysis/`
-
-* Analyzed inventory and purchasing behavior to optimize ordering strategy using Python
+| # | Project | Organization | Tech | Impact |
+|---|---------|--------------|------|--------|
+| 01 | [Inventory Optimization AI Agent](#01-inventory-optimization-ai-agent) | JHU Carey | LangGraph, Python, Anthropic API, SQLite | 95% service level, dynamic tier optimization |
+| 02 | [ACHP Medicare Advantage Analytics](#02-achp-medicare-analytics) | ACHP | Python, OLS, k-means, logistic regression | Identified $199 HMO-POS cost advantage across 875 counties |
+| 03 | [Exchange Recommendation Engine](#03-exchange-recommendation-engine) | LG Electronics | SQL, BigQuery | +55% exchange rate, ~$151K/month cost savings |
+| 04 | [Push Notification Optimization](#04-push-notification-optimization) | LG Electronics | Python | +76% read rate across 260K+ devices |
+| 05 | [KPI Dashboard Pipeline](#05-kpi-dashboard-pipeline) | LG Electronics | SQL, BigQuery, Looker | 50% reduction in manual reporting (~15 hrs/week) |
+| 06 | [SMS Campaign Attribution](#06-sms-campaign-attribution) | LG Electronics | SQL, BigQuery | End-to-end attribution across SMS, email, and app |
+| 07 | [App Reviews Pipeline](#07-app-reviews-pipeline) | LG Electronics | SQL, BigQuery | Standardized 35K+ reviews, eliminated manual tagging |
 
 ---
 
 ## Technical Skills
 
-* **Languages:** SQL, Python
-* **Data Systems:** Data pipelines, transformation logic, structured data modeling
-* **Analytics:** Attribution, behavioral analysis, KPI tracking
-* **Visualization:** Tableau, Matplotlib, Looker Studio
+**Languages:** Advanced SQL (window functions, CTEs, REGEX, multi-table joins), Python (Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch), R, STATA  
+**AI/ML:** LangGraph, Anthropic API, OLS Regression, Logistic Regression, K-means Clustering, A/B Testing, Cohort Analysis  
+**Cloud:** GCP (BigQuery), AWS (S3, EC2, EMR, SageMaker, Redshift), Spark, Hadoop  
+**BI Tools:** Looker Studio, Tableau, QuickSight, Google Analytics  
+**Data Engineering:** ETL Pipeline Design, Data Modeling, Data Warehousing, Query Optimization  
 
 ---
 
-## Contact
+## 01. Inventory Optimization AI Agent
 
-* LinkedIn: https://www.linkedin.com/in/kanghee-angela-kim/
+📁 `01-inventory-optimization-ai-agent/`
+
+Agentic AI system that autonomously diagnoses inventory risk and generates specific procurement recommendations — compressing reorder decisions from 2 days of manual analysis to under 60 seconds.
+
+→ [View Project](01-inventory-optimization-ai-agent/)
+
+---
+
+## 02. ACHP Medicare Analytics
+
+📁 `02-achp-medicare-analytics/`
+
+End-to-end Python analytics pipeline benchmarking 109K+ Medicare Advantage plans across ACHP and National cohorts following 2026 CMS reimbursement cuts — uncovering National carriers' hidden cost-shifting strategy.
+
+→ [View Project](02-achp-medicare-analytics/)
+
+---
+
+## 03. Exchange Recommendation Engine
+
+📁 `03-exchange-recommendation-engine/`
+
+SQL-based recommendation engine generating top-5 product alternatives across 200+ SKUs with real-time inventory integration — increasing exchange rates from 29% to 45% and saving ~$151K/month.
+
+→ [View Project](03-exchange-recommendation-engine/)
+
+---
+
+## 04. Push Notification Optimization
+
+📁 `04-push-notification-optimization/`
+
+Behavioral analysis of 2.93M push notifications across 260K+ devices — identifying notification fatigue patterns and driving a 76% increase in read rates through system-level redesign.
+
+→ [View Project](04-push-notification-optimization/)
+
+---
+
+## 05. KPI Dashboard Pipeline
+
+📁 `05-kpi-dashboard-pipeline/`
+
+Automated SQL-based KPI reporting system replacing manual Excel workflows — enabling real-time executive visibility and reducing reporting effort by 50% (~15 hrs/week).
+
+→ [View Project](05-kpi-dashboard-pipeline/)
+
+---
+
+## 06. SMS Campaign Attribution
+
+📁 `06-sms-campaign-attribution/`
+
+End-to-end attribution pipeline linking SMS campaign exposure to downstream user actions (signup, connection, registration) — enabling data-driven campaign optimization.
+
+→ [View Project](06-sms-campaign-attribution/)
+
+---
+
+## 07. App Reviews Pipeline
+
+📁 `07-app-reviews-pipeline/`
+
+SQL pipeline transforming 35K+ unstructured customer reviews into a standardized VOC dataset — eliminating manual tagging and enabling scalable product feedback analysis.
+
+→ [View Project](07-app-reviews-pipeline/)
+
+---
+
+*Raw data not included in any project due to confidentiality. Logic, structure, and code are preserved to demonstrate system design and analytical capability.*
