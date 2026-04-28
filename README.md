@@ -24,11 +24,13 @@ Former Customer Data Analyst, LG Electronics
 
 ## Technical Skills
 
-**Languages:** Advanced SQL (window functions, CTEs, REGEX, multi-table joins), Python (Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch), R, STATA  
-**AI/ML:** LangGraph, Anthropic API, OLS Regression, Logistic Regression, K-means Clustering, A/B Testing, Cohort Analysis  
-**Cloud:** GCP (BigQuery), AWS (S3, EC2, EMR, SageMaker, Redshift), Spark, Hadoop  
-**BI Tools:** Looker Studio, Tableau, QuickSight, Google Analytics  
-**Data Engineering:** ETL Pipeline Design, Data Modeling, Data Warehousing, Query Optimization  
+| Category | Tools & Skills |
+|---|---|
+| **Languages**| Advanced SQL (window functions, CTEs, REGEX, multi-table joins), Python (Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch), R, STATA |
+| **BI Tools** | Looker Studio, Tableau, QuickSight, Google Analytics |
+| **Cloud** | GCP (BigQuery), AWS (S3, EC2, EMR, SageMaker, Redshift), Spark, Hadoop |
+| **Data Engineering** | ETL Pipeline Design, Data Modeling, Data Warehousing, Query Optimization |
+| **AI/ML** | LangGraph, Anthropic API, OLS Regression, Logistic Regression, K-means Clustering, A/B Testing, Cohort Analysis |
 
 ---
 
