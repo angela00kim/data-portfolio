@@ -8,9 +8,9 @@ Former Customer Data Analyst, LG Electronics
 
 ## Projects
 
-| # | Project | Organization | Tech | Impact |
-|---|---------|--------------|------|--------|
-| 01 | [Inventory Optimization AI Agent](#01-inventory-optimization-ai-agent) | JHU Carey | LangGraph, Python, Anthropic API, SQLite | 95% service level, dynamic tier optimization |
+| # | Project | Type | Tech | Impact |
+|---|---------|------|------|--------|
+| 01 | [Inventory Optimization AI Agent](#01-inventory-optimization-ai-agent) | Academic | LangGraph, Python, Anthropic API, SQLite | 95% service level, dynamic tier optimization |
 | 02 | [ACHP Medicare Advantage Analytics](#02-achp-medicare-analytics) | ACHP | Python, OLS, k-means, logistic regression | Identified $199 HMO-POS cost advantage across 875 counties |
 | 03 | [Exchange Recommendation Engine](#03-exchange-recommendation-engine) | LG Electronics | SQL, BigQuery | +55% exchange rate, ~$151K/month cost savings |
 | 04 | [Push Notification Optimization](#04-push-notification-optimization) | LG Electronics | Python | +76% read rate across 260K+ devices |
