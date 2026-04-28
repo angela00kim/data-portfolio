@@ -1,5 +1,5 @@
 # Kanghee (Angela) Kim Data Portfolio
-Data Professional with 3+ years of experience a
+Data professional with 3+ years of experience building analytics systems, data pipelines, and AI-powered solutions. Specializing in turning large-scale data into decisions from SQL-based ETL infrastructure to LangGraph agentic pipelines and machine learning models.
 
 MS in Business Analytics & AI, Johns Hopkins University (Aug 2026)  
 Former Customer Data Analyst, LG Electronics  
@@ -18,8 +18,7 @@ Former Customer Data Analyst, LG Electronics
 | 05 | [KPI Dashboard Pipeline](#05-kpi-dashboard-pipeline) | LG Electronics | SQL, BigQuery, Looker | 50% reduction in manual reporting (~15 hrs/week) |
 | 06 | [SMS Campaign Attribution](#06-sms-campaign-attribution) | LG Electronics | SQL, BigQuery | End-to-end attribution across SMS, email, and app |
 | 07 | [App Reviews Pipeline](#07-app-reviews-pipeline) | LG Electronics | SQL, BigQuery | Standardized 35K+ reviews, eliminated manual tagging |
-|    | [EV Market Dashboard](#EV-Market-Dashboard) | Academic |  Tableau | Built Tableau dashboard analyzing EV market trends|
-|    | [Gas Station Inventory Analysis](#gas-station-inventory-analysis) | Academic | Python | Analyzed inventory and purchasing behavior to optimize ordering strategy using Python |
+| 08 | [EV Market Dashboard](#EV-Market-Dashboard) | Academic | Tableau | Built Tableau dashboard analyzing EV market trends|
 
 ---
 
