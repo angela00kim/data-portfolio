@@ -86,12 +86,12 @@ The recommendation engine is at the backend and output tables are called in the 
 
 ### Washer Example
 <p align="center">
-  <img src="agent-view/washer_recommendation_example.png" width="900"/>
+  <img src="agent-view-example/washer_recommendation_example.png" width="900"/>
 </p>
 
 ### Dryer Example
 <p align="center">
-  <img src="agent-view/dryer_recommendation_example.png" width="900"/>
+  <img src="agent-view-example/dryer_recommendation_example.png" width="900"/>
 </p>
 
 - Displays top alternative models based on similarity logic  
