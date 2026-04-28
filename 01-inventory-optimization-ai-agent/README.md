@@ -2,7 +2,7 @@
 
 ## Overview
 
-Agentic AI system that autonomously diagnoses inventory risk and generates specific, quantified procurement recommendations for retail operations — compressing reorder decisions from 2 days of manual analysis to under 60 seconds.
+Agentic AI system that autonomously diagnoses inventory risk and generates specific, quantified procurement recommendations for retail operations, compressing reorder decisions from 2 days of manual analysis to under 60 seconds.
 
 Built using LangGraph and the Anthropic API as part of a graduate course in Generative AI at Johns Hopkins University.
 
