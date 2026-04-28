@@ -62,11 +62,11 @@ As a result, reporting shifted from manual data preparation to **direct visualiz
 
 ## Dashboard
 <p align="center">
-  <img src="images/app_rating_reviews.png" width="800"/>
+  <img src="dashboard-example/app_rating_reviews.png" width="800"/>
 </p>
 
 <p align="center">
-  <img src="images/app_reviews_breakdown.png" width="800"/>
+  <img src="dashboard-example/app_reviews_breakdown.png" width="800"/>
 </p>
 
 
