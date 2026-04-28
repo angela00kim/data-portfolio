@@ -7,7 +7,7 @@ This project analyzes electric vehicle (EV) registration trends in Washington St
 The goal was to explore adoption patterns, geographic distribution, and market structure of EVs over the past decade through interactive data visualization.
 
 🔗 **Live Dashboard:**
-https://public.tableau.com/shared/BHDR2JKR6?:display_count=n&:origin=viz_share_link
+https://public.tableau.com/views/UnderstandingEVRegistrationinWA/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ---
 
