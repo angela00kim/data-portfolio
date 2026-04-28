@@ -34,7 +34,7 @@ Former Customer Data Analyst, LG Electronics
 
 📁 `01-inventory-optimization-ai-agent/`
 
-Agentic AI system that autonomously diagnoses inventory risk and generates specific procurement recommendations — compressing reorder decisions from 2 days of manual analysis to under 60 seconds.
+Agentic AI system that autonomously diagnoses inventory risk and generates specific procurement recommendations, compressing reorder decisions from 2 days of manual analysis to under 60 seconds.
 
 → [View Project](01-inventory-optimization-ai-agent/)
 
@@ -44,7 +44,7 @@ Agentic AI system that autonomously diagnoses inventory risk and generates speci
 
 📁 `02-achp-medicare-analytics/`
 
-End-to-end Python analytics pipeline benchmarking 109K+ Medicare Advantage plans across ACHP and National cohorts following 2026 CMS reimbursement cuts — uncovering National carriers' hidden cost-shifting strategy.
+End-to-end Python analytics pipeline benchmarking 109K+ Medicare Advantage plans across ACHP and National cohorts following 2026 CMS reimbursement cuts, uncovering National carriers' hidden cost-shifting strategy.
 
 → [View Project](02-achp-medicare-analytics/)
 
@@ -54,7 +54,7 @@ End-to-end Python analytics pipeline benchmarking 109K+ Medicare Advantage plans
 
 📁 `03-exchange-recommendation-engine/`
 
-SQL-based recommendation engine generating top-5 product alternatives across 200+ SKUs with real-time inventory integration — increasing exchange rates from 29% to 45% and saving ~$151K/month.
+SQL-based recommendation engine generating top-5 product alternatives across 200+ SKUs with real-time inventory integration, increasing exchange rates from 29% to 45% and saving ~$151K/month.
 
 → [View Project](03-exchange-recommendation-engine/)
 
@@ -64,7 +64,7 @@ SQL-based recommendation engine generating top-5 product alternatives across 200
 
 📁 `04-push-notification-optimization/`
 
-Behavioral analysis of 2.93M push notifications across 260K+ devices — identifying notification fatigue patterns and driving a 76% increase in read rates through system-level redesign.
+Behavioral analysis of 2.93M push notifications across 260K+ devices, identifying notification fatigue patterns and driving a 76% increase in read rates through system-level redesign.
 
 → [View Project](04-push-notification-optimization/)
 
@@ -74,7 +74,7 @@ Behavioral analysis of 2.93M push notifications across 260K+ devices — identif
 
 📁 `05-kpi-dashboard-pipeline/`
 
-Automated SQL-based KPI reporting system replacing manual Excel workflows — enabling real-time executive visibility and reducing reporting effort by 50% (~15 hrs/week).
+Automated SQL-based KPI reporting system replacing manual Excel workflows, enabling real-time executive visibility and reducing reporting effort by 50% (~15 hrs/week).
 
 → [View Project](05-kpi-dashboard-pipeline/)
 
@@ -84,7 +84,7 @@ Automated SQL-based KPI reporting system replacing manual Excel workflows — en
 
 📁 `06-sms-campaign-attribution/`
 
-End-to-end attribution pipeline linking SMS campaign exposure to downstream user actions (signup, connection, registration) — enabling data-driven campaign optimization.
+End-to-end attribution pipeline linking SMS campaign exposure to downstream user actions (signup, connection, registration), enabling data-driven campaign optimization.
 
 → [View Project](06-sms-campaign-attribution/)
 
@@ -94,7 +94,7 @@ End-to-end attribution pipeline linking SMS campaign exposure to downstream user
 
 📁 `07-app-reviews-pipeline/`
 
-SQL pipeline transforming 35K+ unstructured customer reviews into a standardized VOC dataset — eliminating manual tagging and enabling scalable product feedback analysis.
+SQL pipeline transforming 35K+ unstructured customer reviews into a standardized VOC dataset, eliminating manual tagging and enabling scalable product feedback analysis.
 
 → [View Project](07-app-reviews-pipeline/)
 
