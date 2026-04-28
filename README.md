@@ -104,19 +104,12 @@ SQL pipeline transforming 35K+ unstructured customer reviews into a standardized
 → [View Project](07-app-reviews-pipeline/)
 
 ---
-## Academic Projects
-
-### EV Market Dashboard
+## EV Market Tableau Dashboard
 
 📁 `academic-portfolio/ev-tableau-dashboard/`
 
 * Built Tableau dashboard analyzing EV market trends
-
-### Gas Station Inventory Analysis
-
-📁 `academic-portfolio/gas-station-inventory-analysis/`
-
-* Analyzed inventory and purchasing behavior to optimize ordering strategy using Python
+* Live Tableau: https://public.tableau.com/views/UnderstandingEVRegistrationinWA/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ---
 
