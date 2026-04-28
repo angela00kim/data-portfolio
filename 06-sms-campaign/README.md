@@ -31,7 +31,7 @@ Developed a pipeline to link campaign exposure to downstream user actions.
   
 ### Dashboard Examples
 <p align="center">
-  <img src="images/sms_activities.png" width="800"/>
+  <img src="dashboard-example/sms_activities.png" width="800"/>
 </p>
 
 ## Impact
