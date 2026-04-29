@@ -60,11 +60,15 @@ Leadership can directly access and explore data, shifting reporting from a **pus
 
 ### Dashboard Examples
 <p align="center">
+  <img src="dashboard-example/funnel.png" width="800"/>
+</p>
+
+<p align="center">
   <img src="dashboard-example/kpi_overview.png" width="800"/>
 </p>
 
 <p align="center">
-  <img src="dashboard-example/funnel.png" width="800"/>
+  <img src="dashboard-example/monthly_target.png" width="800"/>
 </p>
 
 ## Impact
