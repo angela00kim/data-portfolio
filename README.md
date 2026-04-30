@@ -18,7 +18,7 @@ Former Customer Data Analyst, LG Electronics
 | 05 | [KPI Dashboard Pipeline](#05-kpi-dashboard-pipeline) | LG Electronics | SQL, BigQuery, Looker | 50% reduction in manual reporting (~15 hrs/week) |
 | 06 | [SMS Campaign Attribution](#06-sms-campaign-attribution) | LG Electronics | SQL, BigQuery | End-to-end attribution across SMS, email, and app |
 | 07 | [App Reviews Pipeline](#07-app-reviews-pipeline) | LG Electronics | SQL, BigQuery | Standardized 35K+ reviews, eliminated manual tagging |
-| 08 | [EV Market Dashboard](#EV-Market-Dashboard) | Academic | Tableau | Built Tableau dashboard analyzing EV market trends|
+| 08 | [EV Market Dashboard](#08-EV-Market-Tableau-Dashboard) | Academic | Tableau | Built Tableau dashboard analyzing EV market trends|
 
 ---
 
@@ -104,9 +104,9 @@ SQL pipeline transforming 35K+ unstructured customer reviews into a standardized
 → [View Project](07-app-reviews-pipeline/)
 
 ---
-## EV Market Tableau Dashboard
+## 08. EV Market Tableau Dashboard
 
-📁 `academic-portfolio/ev-tableau-dashboard/`
+📁 `08-ev-market-tableau/`
 
 * Built Tableau dashboard analyzing EV market trends
   
