@@ -30,7 +30,7 @@ A standard RAG system cannot solve this problem because it requires:
 
 ## System Architecture
 
-The pipeline operates as a **6-node LangGraph StateGraph**:
+The pipeline operates as a **5-node LangGraph StateGraph**:
 
 ```
 User Query
