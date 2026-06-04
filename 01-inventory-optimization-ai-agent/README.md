@@ -1,4 +1,4 @@
-# Inventory Optimization Generative AI Agent
+# Inventory Optimization Agentic AI Agent
 
 ## Overview
 
@@ -21,10 +21,10 @@ For a mid-size retailer managing 500 SKUs, a single stockout during peak season 
 ## Why Agentic AI?
 
 A standard RAG system cannot solve this problem because it requires:
-- **Multi-step conditional logic** — SQL query → stock check → demand forecast → EOQ calculation → synthesis
-- **Dynamic routing** — if stock is healthy, exit early to save compute; if at risk, continue to heavier nodes
-- **Mathematical transformation** — EOQ formula with safety stock buffer must be deterministic and auditable
-- **Ambiguity handling** — when asked "what do we need to reorder this week?" without a SKU, the agent autonomously ranks all 500 items and investigates the top risks
+- **Multi-step conditional logic** : SQL query → stock check → demand forecast → EOQ calculation → synthesis
+- **Dynamic routing** : if stock is healthy, exit early to save compute; if at risk, continue to heavier nodes
+- **Mathematical transformation** : EOQ formula with safety stock buffer must be deterministic and auditable
+- **Ambiguity handling** : when asked "what do we need to reorder this week?" without a SKU, the agent autonomously ranks all 500 items and investigates the top risks
 
 ---
 
@@ -59,14 +59,14 @@ Stock Level SQL Node
 | Component | Implementation | Why Not Rule-Based? |
 |-----------|---------------|---------------------|
 | Intent Parser | Claude Haiku | Must interpret vague queries like "what are we running low on?" |
-| Days-of-Stock Check | Python if/else | Pure threshold — LLM adds latency with no accuracy gain |
+| Days-of-Stock Check | Python if/else | Pure threshold : LLM adds latency with no accuracy gain |
 | Demand Forecast | Python/Pandas | Deterministic math ensures reproducibility |
 | Reorder Qty | EOQ formula | Must be auditable; LLM arithmetic introduces variance |
 | Recommendation Synthesis | Claude Sonnet 4.6 | Must weigh urgency, cost, delay risk, and seasonal context |
 
 ### Why LangGraph over Claude SDK?
 
-LangGraph's `add_conditional_edges()` handles the early-exit routing as a first-class primitive. Implementing the same logic with the Claude SDK would require manual state dictionaries, explicit loop control, and custom routing functions — adding ~50 lines of boilerplate with no architectural benefit.
+LangGraph's `add_conditional_edges()` handles the early-exit routing as a first-class primitive. Implementing the same logic with the Claude SDK would require manual state dictionaries, explicit loop control, and custom routing functions : adding ~50 lines of boilerplate with no architectural benefit.
 
 ---
 
@@ -77,7 +77,7 @@ reorder_qty = (avg_daily_demand × lead_time_days) + safety_stock
 safety_stock = 1.65 × σ_demand × √lead_time_days
 ```
 
-The coefficient **1.65** corresponds to a **95% service level** — the agent targets a 95% probability that stock will not be exhausted before replenishment arrives. Dynamic service level tiers are applied by product category (electronics/beauty: 98%, sports/home goods: 95%, apparel: 90%).
+The coefficient **1.65** corresponds to a **95% service level** : the agent targets a 95% probability that stock will not be exhausted before replenishment arrives. Dynamic service level tiers are applied by product category (electronics/beauty: 98%, sports/home goods: 95%, apparel: 90%).
 
 ---
 
@@ -94,12 +94,12 @@ The coefficient **1.65** corresponds to a **95% service level** — the agent ta
 
 ## Reliability Engineering
 
-- **Exponential backoff retry** — wraps all API calls for resilience
-- **ThreadPoolExecutor timeouts** — 10-second tool timeout with graceful fallback routing
-- **State validation** — performed after each node; missing fields routed to safe exit
-- **Per-node latency profiling** — bottleneck analysis built into pipeline
-- **Max iterations: 6** — prevents runaway loops
-- **Early exit routing** — skips computationally heavy nodes when stock is healthy
+- **Exponential backoff retry** : wraps all API calls for resilience
+- **ThreadPoolExecutor timeouts** : 10-second tool timeout with graceful fallback routing
+- **State validation** : performed after each node; missing fields routed to safe exit
+- **Per-node latency profiling** : bottleneck analysis built into pipeline
+- **Max iterations: 6** : prevents runaway loops
+- **Early exit routing** : skips computationally heavy nodes when stock is healthy
 
 ---
 
@@ -108,17 +108,17 @@ The coefficient **1.65** corresponds to a **95% service level** — the agent ta
 Designed a **LLM-as-judge evaluation framework** to autonomously validate agent outputs:
 
 ### Judge Scoring (0–3 per dimension, 12 total)
-1. **Instruction Adherence** — did it answer the specific inventory question?
-2. **Reasoning Transparency** — is each conclusion backed by tool call outputs?
-3. **Hallucination Check** — does it cite figures NOT in tool outputs?
-4. **Recommendation Specificity** — specific qty + urgency tier + deadline + evidence?
+1. **Instruction Adherence** : did it answer the specific inventory question?
+2. **Reasoning Transparency** : is each conclusion backed by tool call outputs?
+3. **Hallucination Check** : does it cite figures NOT in tool outputs?
+4. **Recommendation Specificity** : specific qty + urgency tier + deadline + evidence?
 
 ### Test Coverage
-- **5 seed test cases** — happy path, edge case, adversarial (non-existent SKU), and 2 complex cases
-- **50 synthetic test variations** — generated via Claude Sonnet to stress-test edge cases
-- **Consistency testing** — 3 runs × 5 seed cases = 15 evaluation calls with variance analysis
-- **FinOps analysis** — cost per run tracked (~$0.034/run); early-exit saves compute on healthy SKUs
-- **3 prompt versions** — iterated with documented failure modes and red team mitigations
+- **5 seed test cases** : happy path, edge case, adversarial (non-existent SKU), and 2 complex cases
+- **50 synthetic test variations** : generated via Claude Sonnet to stress-test edge cases
+- **Consistency testing** : 3 runs × 5 seed cases = 15 evaluation calls with variance analysis
+- **FinOps analysis** : cost per run tracked (~$0.034/run); early-exit saves compute on healthy SKUs
+- **3 prompt versions** : iterated with documented failure modes and red team mitigations
 
 ### 5 Seed Test Cases
 
@@ -171,17 +171,15 @@ Synthetic SQLite database generated with realistic unit economics:
 
 ## Tech Stack
 
-- **LangGraph** — agentic pipeline orchestration
-- **Anthropic API** — Claude Haiku (intent parsing), Claude Sonnet 4.6 (synthesis + evaluation)
-- **Python** — pipeline, tool implementation, evaluation framework
-- **SQLite** — inventory database
+- **LangGraph** : agentic pipeline orchestration
+- **Anthropic API** : Claude Haiku (intent parsing), Claude Sonnet 4.6 (synthesis + evaluation)
+- **Python** : pipeline, tool implementation, evaluation framework
+- **SQLite** : inventory database
 
 ---
 
 ## Files
 
-- `inventory_agent.ipynb` — full pipeline implementation and evaluation
+- `inventory_agentic_ai.ipynb` : full pipeline implementation and evaluation
 
 ---
-
-*Built as part of the Generative AI course at Johns Hopkins University Carey Business School.*
