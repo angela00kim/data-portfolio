@@ -71,6 +71,10 @@ Leadership can directly access and explore data, shifting reporting from a **pus
   <img src="dashboard-example/monthly_target.png" width="800"/>
 </p>
 
+<p align="center">
+  <img src="04-push-notification-optimization/analysis-summary/readrate_dashboard.png" width="600"/>
+</p>
+
 ## Impact
 
 * Reduced manual reporting effort by ~50% (15+ hours/week saved)
