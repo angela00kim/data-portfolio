@@ -72,8 +72,13 @@ Leadership can directly access and explore data, shifting reporting from a **pus
 </p>
 
 <p align="center">
-  <img src="04-push-notification-optimization/analysis-summary/readrate_dashboard.png" width="600"/>
+  <img src="dashboard-example/readrate_dashboard.png" width="800"/>
 </p>
+
+<p align="center">
+  <img src="dashboard-example/app_rating_reviews.png" width="800"/>
+</p>
+
 
 ## Impact
 
