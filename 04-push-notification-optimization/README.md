@@ -72,7 +72,7 @@ Note:
 * Device counts and structure reflect real production-scale data
   
 <p align="center">
-  <img src="analysis-summary/results.png" width="600"/>
+  <img src="analysis-summary/excel_results.png" width="600"/>
 </p>
 
 ### Dashboard Tracking
