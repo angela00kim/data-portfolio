@@ -6,7 +6,7 @@ End-to-end Python analytics pipeline benchmarking 109K+ Medicare Advantage plan-
 
 Built as part of an Analytics Consulting engagement at Johns Hopkins University Carey Business School for the Alliance of Community Health Plans (ACHP).
 
-**Team:** Pranav Desurkar, Stephen Chang, Angela Kim, Shubham Joshi, Wanqian Xiong, Xier Shen
+**Team:** 6 members
 
 ---
 
