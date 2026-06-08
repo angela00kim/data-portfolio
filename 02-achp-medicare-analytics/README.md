@@ -2,7 +2,7 @@
 
 ## Overview
 
-End-to-end Python analytics pipeline benchmarking 109K+ Medicare Advantage plan-county records across ACHP, National, and Regional cohorts — uncovering how National carriers responded to 2026 CMS reimbursement cuts by shifting hidden costs onto members while keeping premiums flat.
+End-to-end Python analytics pipeline benchmarking 109K+ Medicare Advantage plan-county records across ACHP, National, and Regional cohorts, uncovering how National carriers responded to 2026 CMS reimbursement cuts by shifting hidden costs onto members while keeping premiums flat.
 
 Built as part of an Analytics Consulting engagement at Johns Hopkins University Carey Business School for the Alliance of Community Health Plans (ACHP).
 
@@ -37,15 +37,15 @@ OLS regression with HC3 robust standard errors confirmed ACHP's pricing strategy
 
 ### Finding 2: National Carriers Cut Drug Benefits to Finance Flat Premiums
 
-81% of National plans eroded drug benefits vs. only 56% of ACHP plans. National avg Part D deductible increase: **+$118 vs. ACHP's +$25** — a $93 gap that is hidden behind flat premium headlines.
+67.5% of National plans eroded drug benefits vs. 41.3% of ACHP plans — a 26-point gap (1.6x the rate). National avg Part D deductible increase: **+$114 vs. ACHP's +$26** — a 4.5x difference hidden behind flat premium headlines.
 
-Aetna and Humana led in both deductible hikes (+$150 avg) and benefit erosion (80%+ erosion rate) — more than 6x ACHP's benchmark.
+<!-- VERIFY against final presentation: Aetna/Humana deductible +$150 avg, 80%+ erosion rate, and the multiple-of-ACHP figure all need confirming; '6x' is inconsistent with ACHP's 41.3% rate. -->
 
 ### Finding 3: ACHP Has a Structural Competitive Opening in HMO-POS Markets
 
-National HMO-POS plans raised combined costs $199 more than ACHP — creating a direct member acquisition opportunity in the exact plan type where nationals are cutting most.
+National HMO-POS plans raised combined costs $199 more than ACHP (National +$475 vs. ACHP +$276) — creating a direct member acquisition opportunity in the exact plan type where nationals are cutting most.
 
-ACHP leads in **56% of the 875 counties** it competes in. Strongholds: upper Midwest and Pacific Northwest. Vulnerability zones: Virginia and New Mexico (nationals offering $0 premium).
+ACHP leads in **493 of the 875 counties** (56%) it competes in. Strongholds: upper Midwest and Pacific Northwest. Vulnerability zones: Virginia and New Mexico (nationals offering $0 premium).
 
 ---
 
